@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package listify.query.v1;
+
+option go_package = "github.com/pentops/listify/query/v1;query_pb";
+
+message SqlClauses{
+  repeated SqlClause clauses = 1;
+}
+
+message SqlClause {
+  string               predicate = 1;
+  repeated SqlArgument arguments = 2;
+}
+
+message SqlArgument {
+  oneof kind {
+    double   double    =  1;
+    fixed32  fixed32   =  2;
+    fixed64  fixed64   =  3;
+    float    float     =  4;
+    int32    int32     =  5;
+    int64    int64     =  6;
+    sfixed32 sfixed32  =  7;
+    sfixed64 sfixed64  =  8;
+    sint32   sint32    =  9;
+    sint64   sint64    = 10;
+    uint32   uint32    = 11;
+    uint64   uint64    = 12;
+    string   string    = 13;
+  }
+}
