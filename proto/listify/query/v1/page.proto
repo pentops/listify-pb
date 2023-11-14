@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package listify.query.v1;
+
+option go_package = "github.com/pentops/listify/query/v1;query_pb";
+
+message PageRequest {
+  string token = 30;
+  int64  limit = 31;
+}
+
+message PageResponse {
+  string next_token         = 1;
+  bool   final_page         = 2;
+  int64  total_page_records = 3;
+  int64  total_records      = 4;
+}
