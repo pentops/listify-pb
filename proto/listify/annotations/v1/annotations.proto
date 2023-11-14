@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package listify.v1;
+package listify.annotations.v1;
 
 import "google/protobuf/descriptor.proto";
 
-option go_package = "github.com/pentops/listify/v1;listify";
+option go_package = "github.com/pentops/listify/annotations/v1;annotations";
 
 extend google.protobuf.MethodOptions {
   MethodOptions api = 86510000;

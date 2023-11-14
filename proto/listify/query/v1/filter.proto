@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package listify.v1;
+package listify.query.v1;
 
 import "buf/validate/validate.proto";
 import "google/protobuf/timestamp.proto";
