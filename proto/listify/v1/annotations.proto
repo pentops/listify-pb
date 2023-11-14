@@ -4,7 +4,7 @@ package listify.v1;
 
 import "google/protobuf/descriptor.proto";
 
-option go_package = "github.com/pentops/protoc-gen-listify/listify/v1;listify";
+option go_package = "github.com/pentops/listify/v1;listify";
 
 extend google.protobuf.MethodOptions {
   MethodOptions api = 86510000;

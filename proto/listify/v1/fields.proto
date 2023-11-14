@@ -6,7 +6,7 @@ import "buf/validate/validate.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
 
-option go_package = "github.com/pentops/protoc-gen-listify/listify/v1;listify";
+option go_package = "github.com/pentops/listify/v1;listify";
 
 message PageRequest {
   string token = 30;
