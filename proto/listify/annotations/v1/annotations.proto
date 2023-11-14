@@ -4,7 +4,7 @@ package listify.annotations.v1;
 
 import "google/protobuf/descriptor.proto";
 
-option go_package = "github.com/pentops/listify/annotations/v1;annotations_pb";
+option go_package = "github.com/pentops/listify-go/annotations/v1;annotations_pb";
 
 extend google.protobuf.MethodOptions {
   MethodOptions api = 86510000;
