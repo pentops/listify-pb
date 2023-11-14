@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package listify.query.v1;
 
-option go_package = "github.com/pentops/listify/query/v1;query_pb";
+option go_package = "github.com/pentops/listify-go/query/v1;query_pb";
 
 message PageRequest {
   string token = 30;

@@ -6,7 +6,7 @@ import "buf/validate/validate.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
 
-option go_package = "github.com/pentops/listify/query/v1;query_pb";
+option go_package = "github.com/pentops/listify-go/query/v1;query_pb";
 
 message Search {
   string query = 1;
