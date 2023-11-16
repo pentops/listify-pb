@@ -10,8 +10,7 @@ message PageRequest {
 }
 
 message PageResponse {
-  string next_token         = 1;
-  bool   final_page         = 2;
-  int64  total_page_records = 3;
-  int64  total_records      = 4;
+  string next_token             = 1;
+  int64  total_page_records     = 2;
+  int64  total_records_estimate = 3;
 }
